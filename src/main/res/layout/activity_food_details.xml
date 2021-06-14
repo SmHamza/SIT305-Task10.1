@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodDetails">
+
+    <ImageView
+        android:id="@+id/fooddItemViewImage"
+        android:layout_width="409dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/food_dTitle"
+        android:layout_width="134dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="139dp"
+        android:text="Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fooddItemViewImage" />
+
+    <TextView
+        android:id="@+id/food_dDescription"
+        android:layout_width="322dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="44dp"
+        android:text="Description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food_dTitle" />
+
+    <TextView
+        android:id="@+id/food_dDate"
+        android:layout_width="324dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="42dp"
+        android:text="Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food_dDescription" />
+
+    <TextView
+        android:id="@+id/food_dTime"
+        android:layout_width="324dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="42dp"
+        android:text="Pick Up Time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food_dDate" />
+
+    <TextView
+        android:id="@+id/food_dQuantity"
+        android:layout_width="324dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="42dp"
+        android:text="Quantity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food_dTime" />
+
+    <TextView
+        android:id="@+id/food_dLocation"
+        android:layout_width="324dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="42dp"
+        android:text="Location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food_dQuantity" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="325dp"
+        android:layout_height="113dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food_dLocation" />
+
+    <Button
+        android:id="@+id/payButton"
+        android:layout_width="253dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="79dp"
+        android:text="PAY WITH PAYPAL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_to_cartButton" />
+
+    <Button
+        android:id="@+id/add_to_cartButton"
+        android:layout_width="253dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="79dp"
+        android:text="ADD TO CART"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

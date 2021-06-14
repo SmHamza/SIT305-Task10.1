@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/homeText"
+        android:layout_width="362dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Discover Free Food"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myFoodItemsRecyclerView"
+        android:layout_width="408dp"
+        android:layout_height="509dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeText" />
+
+    <ImageButton
+        android:id="@+id/mySideMenuButton"
+        android:layout_width="44dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="2dp"
+        android:onClick="showMenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dot_menu" />
+
+    <ImageButton
+        android:id="@+id/myAddFoodButton"
+        android:layout_width="66dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="329dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myFoodItemsRecyclerView"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

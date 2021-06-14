@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFoodItem">
+
+    <ImageView
+        android:id="@+id/insert_image"
+        android:layout_width="409dp"
+        android:layout_height="170dp"
+        android:onClick="chooseImage"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/imageDescription"
+        android:layout_width="374dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="12dp"
+        android:hint="Description"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageTitle" />
+
+    <EditText
+        android:id="@+id/imageTitle"
+        android:layout_width="376dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="2dp"
+        android:hint="Title"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/insert_image" />
+
+    <EditText
+        android:id="@+id/quantityInputText"
+        android:layout_width="108dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:hint="Quantity"
+        android:inputType="number"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeInputText" />
+
+    <EditText
+        android:id="@+id/timeInputText"
+        android:layout_width="110dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="86dp"
+        android:hint="Time"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/locationInputText"
+        android:layout_width="386dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="9dp"
+        android:hint="Location"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quantityInputText" />
+
+    <EditText
+        android:id="@+id/priceInputText"
+        android:layout_width="386dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="72dp"
+        android:hint="Input Price"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quantityInputText" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="254dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="27dp"
+        android:hint="Description"
+        android:text="Save"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceInputText" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="240dp"
+        android:layout_height="223dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageDescription" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="108dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="18dp"
+        android:text="Date"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/calendarView"
+        app:layout_constraintTop_toBottomOf="@+id/imageDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

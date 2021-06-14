@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity">
+
+    <TextView
+        android:id="@+id/cartTextView"
+        android:layout_width="229dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center|center_vertical"
+        android:text="My Cart"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartRecyclerView"
+        android:layout_width="413dp"
+        android:layout_height="372dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cartTextView" />
+
+    <TextView
+        android:id="@+id/totalPriceTextView"
+        android:layout_width="247dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="82dp"
+        android:text="Total: $100"
+        android:textColor="#040404"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cartRecyclerView" />
+
+    <Button
+        android:id="@+id/payCartButton"
+        android:layout_width="246dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="83dp"
+        android:text="Pay with payPal"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalPriceTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
